@@ -82,5 +82,35 @@ namespace SEDEfacturacion
         {
 
         }
+
+        private void tabPage3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label32_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox30_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox49_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
