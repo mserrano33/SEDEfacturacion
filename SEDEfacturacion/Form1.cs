@@ -112,5 +112,10 @@ namespace SEDEfacturacion
         {
 
         }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
