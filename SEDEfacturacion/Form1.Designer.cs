@@ -553,18 +553,19 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(302, 51);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 13);
+            this.label7.Size = new System.Drawing.Size(52, 13);
             this.label7.TabIndex = 15;
-            this.label7.Text = "Marca";
+            this.label7.Text = "Categoria";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(207, 51);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 13);
+            this.label6.Size = new System.Drawing.Size(63, 13);
             this.label6.TabIndex = 14;
-            this.label6.Text = "Detalle ";
+            this.label6.Text = "Descripcion";
             // 
             // textBox6
             // 
@@ -832,20 +833,20 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(242, 26);
+            this.label26.Location = new System.Drawing.Point(235, 26);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(36, 13);
+            this.label26.Size = new System.Drawing.Size(51, 13);
             this.label26.TabIndex = 8;
-            this.label26.Text = "marca";
+            this.label26.Text = "categoria";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Location = new System.Drawing.Point(153, 26);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(38, 13);
+            this.label25.Size = new System.Drawing.Size(61, 13);
             this.label25.TabIndex = 7;
-            this.label25.Text = "detalle";
+            this.label25.Text = "descripcion";
             this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // label24
