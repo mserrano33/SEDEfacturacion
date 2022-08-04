@@ -105,19 +105,19 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.textBox49 = new System.Windows.Forms.TextBox();
-            this.textBox48 = new System.Windows.Forms.TextBox();
+            this.txtestado = new System.Windows.Forms.TextBox();
+            this.txtvencimiento = new System.Windows.Forms.TextBox();
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label42 = new System.Windows.Forms.Label();
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.txtsaldo = new System.Windows.Forms.TextBox();
+            this.txttelefono = new System.Windows.Forms.TextBox();
+            this.txtdireccion = new System.Windows.Forms.TextBox();
+            this.txtDNI = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -917,19 +917,19 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.tabPage3.Controls.Add(this.textBox49);
-            this.tabPage3.Controls.Add(this.textBox48);
+            this.tabPage3.Controls.Add(this.txtestado);
+            this.tabPage3.Controls.Add(this.txtvencimiento);
             this.tabPage3.Controls.Add(this.label54);
             this.tabPage3.Controls.Add(this.label53);
             this.tabPage3.Controls.Add(this.pictureBox5);
             this.tabPage3.Controls.Add(this.label42);
             this.tabPage3.Controls.Add(this.button15);
             this.tabPage3.Controls.Add(this.button14);
-            this.tabPage3.Controls.Add(this.textBox37);
-            this.tabPage3.Controls.Add(this.textBox36);
-            this.tabPage3.Controls.Add(this.textBox35);
-            this.tabPage3.Controls.Add(this.textBox34);
-            this.tabPage3.Controls.Add(this.textBox33);
+            this.tabPage3.Controls.Add(this.txtsaldo);
+            this.tabPage3.Controls.Add(this.txttelefono);
+            this.tabPage3.Controls.Add(this.txtdireccion);
+            this.tabPage3.Controls.Add(this.txtDNI);
+            this.tabPage3.Controls.Add(this.txtnombre);
             this.tabPage3.Controls.Add(this.label41);
             this.tabPage3.Controls.Add(this.label40);
             this.tabPage3.Controls.Add(this.label39);
@@ -943,20 +943,20 @@
             this.tabPage3.Text = "cliente";
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click_1);
             // 
-            // textBox49
+            // txtestado
             // 
-            this.textBox49.Location = new System.Drawing.Point(567, 59);
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(77, 20);
-            this.textBox49.TabIndex = 29;
-            this.textBox49.TextChanged += new System.EventHandler(this.textBox49_TextChanged);
+            this.txtestado.Location = new System.Drawing.Point(567, 59);
+            this.txtestado.Name = "txtestado";
+            this.txtestado.Size = new System.Drawing.Size(77, 20);
+            this.txtestado.TabIndex = 29;
+            this.txtestado.TextChanged += new System.EventHandler(this.textBox49_TextChanged);
             // 
-            // textBox48
+            // txtvencimiento
             // 
-            this.textBox48.Location = new System.Drawing.Point(467, 59);
-            this.textBox48.Name = "textBox48";
-            this.textBox48.Size = new System.Drawing.Size(94, 20);
-            this.textBox48.TabIndex = 28;
+            this.txtvencimiento.Location = new System.Drawing.Point(467, 59);
+            this.txtvencimiento.Name = "txtvencimiento";
+            this.txtvencimiento.Size = new System.Drawing.Size(94, 20);
+            this.txtvencimiento.TabIndex = 28;
             // 
             // label54
             // 
@@ -1012,41 +1012,43 @@
             this.button14.TabIndex = 12;
             this.button14.Text = "Cargar";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
-            // textBox37
+            // txtsaldo
             // 
-            this.textBox37.Location = new System.Drawing.Point(396, 59);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(65, 20);
-            this.textBox37.TabIndex = 11;
+            this.txtsaldo.Location = new System.Drawing.Point(396, 59);
+            this.txtsaldo.Name = "txtsaldo";
+            this.txtsaldo.Size = new System.Drawing.Size(65, 20);
+            this.txtsaldo.TabIndex = 11;
             // 
-            // textBox36
+            // txttelefono
             // 
-            this.textBox36.Location = new System.Drawing.Point(299, 59);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(91, 20);
-            this.textBox36.TabIndex = 10;
+            this.txttelefono.Location = new System.Drawing.Point(299, 59);
+            this.txttelefono.Name = "txttelefono";
+            this.txttelefono.Size = new System.Drawing.Size(91, 20);
+            this.txttelefono.TabIndex = 10;
             // 
-            // textBox35
+            // txtdireccion
             // 
-            this.textBox35.Location = new System.Drawing.Point(193, 59);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(100, 20);
-            this.textBox35.TabIndex = 9;
+            this.txtdireccion.Location = new System.Drawing.Point(193, 59);
+            this.txtdireccion.Name = "txtdireccion";
+            this.txtdireccion.Size = new System.Drawing.Size(100, 20);
+            this.txtdireccion.TabIndex = 9;
             // 
-            // textBox34
+            // txtDNI
             // 
-            this.textBox34.Location = new System.Drawing.Point(103, 59);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(84, 20);
-            this.textBox34.TabIndex = 8;
+            this.txtDNI.Location = new System.Drawing.Point(103, 59);
+            this.txtDNI.Name = "txtDNI";
+            this.txtDNI.Size = new System.Drawing.Size(84, 20);
+            this.txtDNI.TabIndex = 8;
             // 
-            // textBox33
+            // txtnombre
             // 
-            this.textBox33.Location = new System.Drawing.Point(3, 59);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(94, 20);
-            this.textBox33.TabIndex = 7;
+            this.txtnombre.Location = new System.Drawing.Point(3, 59);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(94, 20);
+            this.txtnombre.TabIndex = 7;
+            this.txtnombre.TextChanged += new System.EventHandler(this.textBox33_TextChanged);
             // 
             // label41
             // 
@@ -1658,11 +1660,11 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox33;
+        private System.Windows.Forms.TextBox txtsaldo;
+        private System.Windows.Forms.TextBox txttelefono;
+        private System.Windows.Forms.TextBox txtdireccion;
+        private System.Windows.Forms.TextBox txtDNI;
+        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label39;
@@ -1687,8 +1689,8 @@
         private System.Windows.Forms.TextBox textBox32;
         private System.Windows.Forms.TextBox textBox28;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.TextBox textBox49;
-        private System.Windows.Forms.TextBox textBox48;
+        private System.Windows.Forms.TextBox txtestado;
+        private System.Windows.Forms.TextBox txtvencimiento;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.PictureBox pictureBox5;

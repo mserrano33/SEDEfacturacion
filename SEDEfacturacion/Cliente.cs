@@ -12,8 +12,9 @@ namespace SEDEfacturacion
         public string Nombre { get; set;}
         public string DNI {  get; set;}
         public string Direccion { get; set;}
-        public int Telefono { get; set;}
-        public int Id_estado { get; set;}
+        public string Telefono { get; set;}
+        public string Id_estado { get; set;}
 
+        //_businessLogicLayer.SaveCliente(cliente);
     }
 }

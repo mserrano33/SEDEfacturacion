@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,37 +9,31 @@ namespace SEDEfacturacion
 {
     public class DataAccessLayer
     {
-        private SqlConnection conn = new SqlConnection("link de coneccion")
+        private SqlConnection conn = new SqlConnection("Integrated Security=SSPI;Persist Securty Info=False;Initial Catalog=polirubro;Data suource=LAPTOP-MTOM31PT");
 
-        public void InsertCliente(Cliente contact)
-        public List<Cliente> GetCliente()
+        public void InsertCliente(Cliente cliente)
+        
         {
             try
             {
-                conn.Open():
-                string query "SELECT";
-                SqlCommand command = new SqlCommand(query, conn);
+                conn.Open();
+                string query =@"
+                                 INSERT INTO Clientes(Nombre, DNI, Direccion,
+                                 Telefono, Id_estado)";
 
-                SqlDataReader reader = command.ExecuteReader():
 
-                While (reader.Read())
-                {
-                    clientes.Add(new Cliente
-                    {
-                        Id = int.Parse(reader["Id"].ToString(),
-                        ///FirstName cambiar continuar como guardar lista
-                    });     
-                 
-                }
-                    
+                SqlCommand comand = new SqlCommand(query, conn);
             }
             catch (Exception)
             {
                 throw;
             }
-            finally { conn.Close(); }
+            finally 
+            { 
+                conn.Close(); 
+            }
 
-            return clientes;
+            
         }
     }
 }

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace SEDEfacturacion
 {
+    
     public partial class Form1 : Form
+    
     {
+        private BusinessLogicLayer _businessLogicLayer;
         public Form1()
+        
         {
             InitializeComponent();
+            _businessLogicLayer = new BusinessLogicLayer();
         }
 
         private void tabPage3_Click(object sender, EventArgs e)
@@ -120,6 +125,24 @@ namespace SEDEfacturacion
 
         private void label7_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox33_TextChanged(object sender, EventArgs e)
+        {
+            Cliente cliente = new Cliente();
+            cliente.Nombre = txtnombre.Text;
+            cliente.DNI = txtDNI.Text;
+            cliente.Direccion = txtdireccion.Text;
+            cliente.Telefono = txttelefono.Text;
+            cliente.Id_estado = txtestado.Text;
+
+
 
         }
     }

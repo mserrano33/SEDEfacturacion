@@ -6,21 +6,24 @@ using System.Threading.Tasks;
 
 namespace SEDEfacturacion
 {
-    private DataAccessLayer _dataAccessLayer;/// corregir error buscar en google
-    /// 
-    /// </summary>
-    public class BusinessLogicLayer()
+    public class BusinessLogicLayer
     {
-        _dataAccessLayer = new DataAccessLayer();
+        private DataAccessLayer _dataAccessLayer;
+
+        public BusinessLogicLayer()
+
+        {
+            _dataAccessLayer = new DataAccessLayer();
+        }
+        public Cliente SaveCliente(Cliente cliente)
+        {
+            if (cliente.Id == 0)
+                _dataAccessLayer.InsertCliente(cliente);
+            //else
+                //_dataAccessLayer.UpdateContact
+
+                return cliente;
+
+        }
     }
-    public Cliente SaveCliente(Cliente cliente)
-{
-    if (contact.Id == 0)
-        _dataAccessLayer.IsertCliente(cliente);
-    //else
-    //_dataAccessLayer.UpdateContact
-
-    return contact;
-}
-
 }
