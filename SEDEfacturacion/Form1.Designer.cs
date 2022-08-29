@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button13 = new System.Windows.Forms.Button();
@@ -106,19 +107,15 @@
             this.button7 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.txtestado = new System.Windows.Forms.TextBox();
-            this.txtvencimiento = new System.Windows.Forms.TextBox();
             this.label54 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label42 = new System.Windows.Forms.Label();
             this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.txtsaldo = new System.Windows.Forms.TextBox();
+            this.botonCargar = new System.Windows.Forms.Button();
             this.txttelefono = new System.Windows.Forms.TextBox();
             this.txtdireccion = new System.Windows.Forms.TextBox();
             this.txtDNI = new System.Windows.Forms.TextBox();
             this.txtnombre = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
@@ -170,6 +167,13 @@
             this.label46 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dNIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -187,6 +191,7 @@
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -677,7 +682,7 @@
             // 
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 93);
+            this.dataGridView2.Location = new System.Drawing.Point(6, 104);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(588, 111);
             this.dataGridView2.TabIndex = 0;
@@ -777,7 +782,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::SEDEfacturacion.Properties.Resources.logocarro;
-            this.pictureBox2.Location = new System.Drawing.Point(668, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(652, 6);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 111);
             this.pictureBox2.TabIndex = 14;
@@ -918,19 +923,15 @@
             // 
             this.tabPage3.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.tabPage3.Controls.Add(this.txtestado);
-            this.tabPage3.Controls.Add(this.txtvencimiento);
             this.tabPage3.Controls.Add(this.label54);
-            this.tabPage3.Controls.Add(this.label53);
             this.tabPage3.Controls.Add(this.pictureBox5);
             this.tabPage3.Controls.Add(this.label42);
             this.tabPage3.Controls.Add(this.button15);
-            this.tabPage3.Controls.Add(this.button14);
-            this.tabPage3.Controls.Add(this.txtsaldo);
+            this.tabPage3.Controls.Add(this.botonCargar);
             this.tabPage3.Controls.Add(this.txttelefono);
             this.tabPage3.Controls.Add(this.txtdireccion);
             this.tabPage3.Controls.Add(this.txtDNI);
             this.tabPage3.Controls.Add(this.txtnombre);
-            this.tabPage3.Controls.Add(this.label41);
             this.tabPage3.Controls.Add(this.label40);
             this.tabPage3.Controls.Add(this.label39);
             this.tabPage3.Controls.Add(this.label38);
@@ -951,13 +952,6 @@
             this.txtestado.TabIndex = 29;
             this.txtestado.TextChanged += new System.EventHandler(this.textBox49_TextChanged);
             // 
-            // txtvencimiento
-            // 
-            this.txtvencimiento.Location = new System.Drawing.Point(467, 59);
-            this.txtvencimiento.Name = "txtvencimiento";
-            this.txtvencimiento.Size = new System.Drawing.Size(94, 20);
-            this.txtvencimiento.TabIndex = 28;
-            // 
             // label54
             // 
             this.label54.AutoSize = true;
@@ -967,19 +961,10 @@
             this.label54.TabIndex = 27;
             this.label54.Text = "Estado";
             // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(464, 43);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(97, 13);
-            this.label53.TabIndex = 26;
-            this.label53.Text = "Fecha vencimiento";
-            // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::SEDEfacturacion.Properties.Resources.logocarro;
-            this.pictureBox5.Location = new System.Drawing.Point(665, 12);
+            this.pictureBox5.Location = new System.Drawing.Point(654, 12);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(100, 111);
             this.pictureBox5.TabIndex = 25;
@@ -989,7 +974,7 @@
             // 
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(20, 12);
+            this.label42.Location = new System.Drawing.Point(38, 12);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(117, 18);
             this.label42.TabIndex = 24;
@@ -1004,65 +989,51 @@
             this.button15.Text = "Eliminar";
             this.button15.UseVisualStyleBackColor = true;
             // 
-            // button14
+            // botonCargar
             // 
-            this.button14.Location = new System.Drawing.Point(146, 85);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 32);
-            this.button14.TabIndex = 12;
-            this.button14.Text = "Cargar";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
-            // txtsaldo
-            // 
-            this.txtsaldo.Location = new System.Drawing.Point(396, 59);
-            this.txtsaldo.Name = "txtsaldo";
-            this.txtsaldo.Size = new System.Drawing.Size(65, 20);
-            this.txtsaldo.TabIndex = 11;
+            this.botonCargar.Location = new System.Drawing.Point(146, 85);
+            this.botonCargar.Name = "botonCargar";
+            this.botonCargar.Size = new System.Drawing.Size(75, 32);
+            this.botonCargar.TabIndex = 12;
+            this.botonCargar.Text = "Cargar";
+            this.botonCargar.UseVisualStyleBackColor = true;
+            this.botonCargar.Click += new System.EventHandler(this.button14_Click);
             // 
             // txttelefono
             // 
-            this.txttelefono.Location = new System.Drawing.Point(299, 59);
+            this.txttelefono.Location = new System.Drawing.Point(414, 59);
             this.txttelefono.Name = "txttelefono";
-            this.txttelefono.Size = new System.Drawing.Size(91, 20);
+            this.txttelefono.Size = new System.Drawing.Size(137, 20);
             this.txttelefono.TabIndex = 10;
             // 
             // txtdireccion
             // 
-            this.txtdireccion.Location = new System.Drawing.Point(193, 59);
+            this.txtdireccion.Location = new System.Drawing.Point(299, 59);
             this.txtdireccion.Name = "txtdireccion";
             this.txtdireccion.Size = new System.Drawing.Size(100, 20);
             this.txtdireccion.TabIndex = 9;
+            this.txtdireccion.TextChanged += new System.EventHandler(this.txtdireccion_TextChanged);
             // 
             // txtDNI
             // 
-            this.txtDNI.Location = new System.Drawing.Point(103, 59);
+            this.txtDNI.Location = new System.Drawing.Point(179, 59);
             this.txtDNI.Name = "txtDNI";
-            this.txtDNI.Size = new System.Drawing.Size(84, 20);
+            this.txtDNI.Size = new System.Drawing.Size(114, 20);
             this.txtDNI.TabIndex = 8;
+            this.txtDNI.TextChanged += new System.EventHandler(this.txtDNI_TextChanged);
             // 
             // txtnombre
             // 
-            this.txtnombre.Location = new System.Drawing.Point(3, 59);
+            this.txtnombre.Location = new System.Drawing.Point(23, 59);
             this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(94, 20);
+            this.txtnombre.Size = new System.Drawing.Size(150, 20);
             this.txtnombre.TabIndex = 7;
             this.txtnombre.TextChanged += new System.EventHandler(this.textBox33_TextChanged);
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(413, 43);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(34, 13);
-            this.label41.TabIndex = 5;
-            this.label41.Text = "Saldo";
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(313, 43);
+            this.label40.Location = new System.Drawing.Point(471, 43);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(49, 13);
             this.label40.TabIndex = 4;
@@ -1071,7 +1042,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(224, 43);
+            this.label39.Location = new System.Drawing.Point(322, 43);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(52, 13);
             this.label39.TabIndex = 3;
@@ -1080,7 +1051,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(143, 43);
+            this.label38.Location = new System.Drawing.Point(220, 43);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(26, 13);
             this.label38.TabIndex = 2;
@@ -1089,16 +1060,26 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(32, 43);
+            this.label37.Location = new System.Drawing.Point(66, 43);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(39, 13);
             this.label37.TabIndex = 1;
             this.label37.Text = "Cliente";
+            this.label37.Click += new System.EventHandler(this.label37_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nombreDataGridViewTextBoxColumn,
+            this.dNIDataGridViewTextBoxColumn,
+            this.direccionDataGridViewTextBoxColumn,
+            this.telefonoDataGridViewTextBoxColumn,
+            this.estadoDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.clienteBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(13, 131);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(741, 224);
@@ -1544,6 +1525,46 @@
             this.label44.TabIndex = 0;
             this.label44.Text = "Proveedores";
             // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataSource = typeof(SEDEfacturacion.Cliente);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            // 
+            // dNIDataGridViewTextBoxColumn
+            // 
+            this.dNIDataGridViewTextBoxColumn.DataPropertyName = "DNI";
+            this.dNIDataGridViewTextBoxColumn.HeaderText = "DNI";
+            this.dNIDataGridViewTextBoxColumn.Name = "dNIDataGridViewTextBoxColumn";
+            // 
+            // direccionDataGridViewTextBoxColumn
+            // 
+            this.direccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion";
+            this.direccionDataGridViewTextBoxColumn.HeaderText = "Direccion";
+            this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
+            // 
+            // telefonoDataGridViewTextBoxColumn
+            // 
+            this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "Telefono";
+            this.telefonoDataGridViewTextBoxColumn.HeaderText = "Telefono";
+            this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
+            // 
+            // estadoDataGridViewTextBoxColumn
+            // 
+            this.estadoDataGridViewTextBoxColumn.DataPropertyName = "Estado";
+            this.estadoDataGridViewTextBoxColumn.HeaderText = "Estado";
+            this.estadoDataGridViewTextBoxColumn.Name = "estadoDataGridViewTextBoxColumn";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1576,6 +1597,7 @@
             this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1659,13 +1681,11 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.TextBox txtsaldo;
+        private System.Windows.Forms.Button botonCargar;
         private System.Windows.Forms.TextBox txttelefono;
         private System.Windows.Forms.TextBox txtdireccion;
         private System.Windows.Forms.TextBox txtDNI;
         private System.Windows.Forms.TextBox txtnombre;
-        private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label38;
@@ -1690,9 +1710,7 @@
         private System.Windows.Forms.TextBox textBox28;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.TextBox txtestado;
-        private System.Windows.Forms.TextBox txtvencimiento;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label53;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.TextBox textBox39;
         private System.Windows.Forms.TabPage tabPage5;
@@ -1723,6 +1741,13 @@
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dNIDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource clienteBindingSource;
     }
 }
 

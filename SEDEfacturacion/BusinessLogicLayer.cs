@@ -25,5 +25,9 @@ namespace SEDEfacturacion
                 return cliente;
 
         }
+        public List<Cliente> GetClientes()
+            {
+            return _dataAccessLayer.GetClientes();
+        }
     }
 }

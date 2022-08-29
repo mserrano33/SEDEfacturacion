@@ -13,7 +13,7 @@ namespace SEDEfacturacion
         public string DNI {  get; set;}
         public string Direccion { get; set;}
         public string Telefono { get; set;}
-        public string Id_estado { get; set;}
+        public string Estado { get; set;}
 
         //_businessLogicLayer.SaveCliente(cliente);
     }
